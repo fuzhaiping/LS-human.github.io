@@ -1,113 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFE Project Page</title>
+    <title>Human Body Dataset Showcase</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            margin: 20px;
         }
-        .header {
-            background: linear-gradient(135deg, #0d6efd, #0d6efd, #0d6efd);
-            color: #fff;
+        h1 {
             text-align: center;
-            padding: 50px 20px;
+            color: #333;
         }
-        .header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .header p {
-            font-size: 1.5em;
-            margin: 10px 0 30px;
-        }
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        .buttons a {
-            text-decoration: none;
-            color: #0d6efd;
-            background-color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .buttons a:hover {
-            background-color: #0d6efd;
-            color: #fff;
-        }
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-        .content h2 {
-            color: #0d6efd;
-        }
-        .images {
+        .image-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
+            justify-content: space-around;
+            margin: 20px 0;
         }
-        .images img {
-            width: calc(33% - 20px);
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            animation: fadeIn 2s forwards;
+        .image-container img {
+            width: 200px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
-        .images img:nth-child(1) { animation-delay: 0.2s; }
-        .images img:nth-child(2) { animation-delay: 0.4s; }
-        .images img:nth-child(3) { animation-delay: 0.6s; }
-        .images img:nth-child(4) { animation-delay: 0.8s; }
-        .images img:nth-child(5) { animation-delay: 1s; }
-        .images img:nth-child(6) { animation-delay: 1.2s; }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
-        }
-        .dataset-title {
-            width: 100%;
+        .download-button {
             text-align: center;
-            font-size: 2.5em;
-            margin-top: 40px;
-            color: skyblue;
-            font-weight: bold;
-            font-style: italic;
+            margin-top: 20px;
+        }
+        .download-button a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .reference {
+            margin-top: 20px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>IFE</h1>
-        <p>The code of IFE projects.</p>
-        <div class="buttons">
-            <a href="https://github.com">View on GitHub</a>
-            <a href="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/2405.07992v2.pdf" download>Download samples</a>
-            <a href="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/kanpaper.pdf" download>Download .tar.gz</a>
-        </div>
-    </div>
-    <div class="content">
-        <h2>Welcome to GitHub Pages.</h2>
-        <p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using <a href="https://guides.github.com/features/mastering-markdown/">GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-    </div>
-    <div class="dataset-title">DataSet</div>
-    <div class="images">
-        <img src="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/images/hao/0.png?raw=true" alt="Image 0">
-        <img src="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/images/hao/1.png?raw=true" alt="Image 1">
-        <img src="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/images/hao/2.png?raw=true" alt="Image 2">
-        <img src="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/images/yao/0.png?raw=true" alt="Image 3">
-        <img src="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/images/yao/1.png?raw=true" alt="Image 4">
-        <img src="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/images/yao/2.png?raw=true" alt="Image 5">
-    </div>
+
+<h1>Human Body Dataset Showcase</h1>
+
+<div class="image-container">
+    <img src="https://github.com/fuzhaiping/fuzhaiping.github.io/tree/main/samples/human1/color/0.png" alt="Image 1">
+    <img src="https://github.com/fuzhaiping/fuzhaiping.github.io/tree/main/samples/human1/color/1.png" alt="Image 2">
+    <img src="https://github.com/fuzhaiping/fuzhaiping.github.io/tree/main/samples/human1/color/2.png" alt="Image 3">
+    <img src="https://github.com/fuzhaiping/fuzhaiping.github.io/tree/main/samples/human3/color/0.png" alt="Image 4">
+    <img src="https://github.com/fuzhaiping/fuzhaiping.github.io/tree/main/samples/human3/color/1.png" alt="Image 5">
+    <img src="https://github.com/fuzhaiping/fuzhaiping.github.io/tree/main/samples/human3/color/2.png" alt="Image 6">
+</div>
+
+<div class="download-button">
+    <a href="https://github.com/fuzhaiping/fuzhaiping.github.io/tree/main/samples" download>Download Human Body Dataset</a>
+</div>
+
+<div class="reference">
+    <p>Reference: Author. (Year). Title. Conference Name, Pages.</p>
+</div>
+
 </body>
 </html>
