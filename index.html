@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IFE Project Page</title>
+    <title>LS-Human Dataset</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            text-align: center;
         }
         .header {
-            background: linear-gradient(135deg, #0d6efd, #0d6efd, #0d6efd);
+            background: #0d6efd;
             color: #fff;
-            text-align: center;
             padding: 50px 20px;
         }
         .header h1 {
@@ -28,6 +28,7 @@
             display: flex;
             justify-content: center;
             gap: 15px;
+            margin-bottom: 20px;
         }
         .buttons a {
             text-decoration: none;
@@ -35,7 +36,7 @@
             background-color: #fff;
             padding: 10px 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s, color 0.3s;
         }
         .buttons a:hover {
@@ -44,55 +45,42 @@
         }
         .content {
             padding: 20px;
-            text-align: center;
         }
         .content h2 {
             color: #0d6efd;
         }
         .images {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             padding: 20px;
+            justify-items: center;
         }
         .images img {
-            width: calc(33% - 20px);
+            width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            animation: fadeIn 2s forwards;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
         }
-        .images img:nth-child(1) { animation-delay: 0.2s; }
-        .images img:nth-child(2) { animation-delay: 0.4s; }
-        .images img:nth-child(3) { animation-delay: 0.6s; }
-        .images img:nth-child(4) { animation-delay: 0.8s; }
-        .images img:nth-child(5) { animation-delay: 1s; }
-        .images img:nth-child(6) { animation-delay: 1.2s; }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-            }
+        .images img:hover {
+            transform: scale(1.1);
         }
         .dataset-title {
-            width: 100%;
-            text-align: center;
-            font-size: 2.5em;
-            margin-top: 40px;
-            color: skyblue;
+            font-size: 2em;
+            margin: 20px 0;
+            color: #0d6efd;
             font-weight: bold;
-            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>IFE</h1>
+        <h1>LS-Human Dataset</h1>
         <p>The code of IFE projects.</p>
         <div class="buttons">
-            <a href="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/2405.07992v2.pdf" download>Download PDF</a>
-            <a href="https://github.com/HITleoAIengineer/HITleoAIengineer.github.io/blob/main/.github/workflows/kanpaper.pdf" download>Download .tar.gz</a>
+            <a href="https://github.com/fuzhaiping/fuzhaiping.github.io/tree/main/samples" download>Download samples</a>
+            <a href="#" download>Download hole dataset(Coming soon)</a>
         </div>
     </div>
     <div class="content">
